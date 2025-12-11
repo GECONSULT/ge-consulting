@@ -173,3 +173,434 @@
     }
 
     h3 {
+      color: var(--navy);
+      margin-top: 18px;
+      margin-bottom: 6px;
+      font-size: 18px;
+    }
+
+    ul {
+      margin: 0 0 12px 20px;
+      padding-left: 16px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .highlight {
+      color: var(--red);
+      font-weight: 600;
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 26px;
+      align-items: center;
+    }
+
+    .img-block {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .img-block img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* --------- FRAMEWORK GRID --------- */
+    .framework-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 10px;
+    }
+
+    .framework-item {
+      background-color: #f9fafc;
+      border-radius: 10px;
+      border: 1px solid #e1e4f0;
+      padding: 16px 18px 18px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .framework-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      border-radius: 999px;
+      background-color: var(--navy);
+      color: var(--white);
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .framework-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 4px;
+    }
+
+    .framework-desc {
+      font-size: 13px;
+      color: #444444;
+    }
+
+    .framework-tag {
+      position: absolute;
+      bottom: -18px;
+      right: -18px;
+      background: linear-gradient(135deg, var(--gold), var(--orange));
+      color: rgba(255,255,255,0.9);
+      font-size: 11px;
+      text-transform: uppercase;
+      padding: 4px 16px;
+      transform: rotate(-18deg);
+    }
+
+    /* --------- QUOTES --------- */
+    .quote {
+      border-left: 4px solid var(--gold);
+      padding-left: 14px;
+      font-style: italic;
+      margin: 10px 0 14px 0;
+      color: #444444;
+    }
+
+    .small {
+      font-size: 13px;
+      color: #777777;
+    }
+
+    /* --------- CTA --------- */
+    .cta-card {
+      background: linear-gradient(135deg, var(--navy), #040b17);
+      color: var(--white);
+      text-align: center;
+      padding: 32px 24px 30px;
+      border-radius: 14px;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.35);
+    }
+
+    .cta-card h2 {
+      margin-top: 0;
+      margin-bottom: 6px;
+      color: var(--white);
+    }
+
+    .cta-email {
+      font-size: 15px;
+      margin-top: 6px;
+    }
+
+    .cta-email a {
+      color: var(--gold);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .cta-email a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #888888;
+      padding: 18px 10px 26px;
+    }
+
+    /* --------- RESPONSIVE --------- */
+    @media (max-width: 800px) {
+      header {
+        min-height: 70vh;
+      }
+
+      .hero-title {
+        font-size: 26px;
+      }
+
+      .two-column {
+        grid-template-columns: 1fr;
+      }
+
+      .section {
+        margin: 30px auto;
+      }
+
+      .card {
+        padding: 22px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========= HERO HEADER ========= -->
+  <header>
+    <div class="hero-inner">
+      <div class="brand-name">GE COACHING & CONSULTING</div>
+      <div class="hero-pill">
+        <span>G.R.O.W.T.H. BUSINESS TRANSFORMATION FRAMEWORK™</span>
+      </div>
+      <h1 class="hero-title">Business Consulting for Leaders Who Want Healthy Growth</h1>
+      <p class="hero-subtitle">
+        Helping small–mid sized businesses strengthen leadership, improve culture, and build systems
+        that support sustainable profit and long-term impact.
+      </p>
+      <p class="hero-tagline">Business Consulting • Leadership Development • Organizational Health</p>
+      <div class="hero-cta">
+        <a class="btn-primary" href="mailto:Ignitemecoaching@gmail.com">Schedule a Consultation</a>
+        <a class="btn-secondary" href="#framework">View the G.R.O.W.T.H. Framework</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========= INTRO + WHO WE SERVE ========= -->
+  <section class="section">
+    <div class="card two-column">
+      <div>
+        <h2 class="section-title">Why Businesses Hire a Consultant</h2>
+        <p class="section-subtitle">
+          Most businesses don’t fail because of a bad product — they struggle because of unclear direction,
+          unhealthy culture, and inconsistent systems.
+        </p>
+        <p>
+          A trusted outside advisor brings what the internal team often cannot:
+        </p>
+        <ul>
+          <li>Clear, objective perspective</li>
+          <li>Proven frameworks and tools</li>
+          <li>Leadership and communication expertise</li>
+          <li>Systems that support consistency and profit</li>
+          <li>Accountability that turns ideas into action</li>
+        </ul>
+        <p class="highlight">
+          My mission is simple: help leaders build healthy businesses that grow, thrive, and last.
+        </p>
+      </div>
+      <div class="img-block">
+        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80"
+             alt="Business team collaborating">
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 class="section-title">Who We Serve</h2>
+      <p>
+        GE Coaching and Consulting serves businesses in the
+        <strong>$250,000 – $5,000,000</strong> annual revenue range that are ready for intentional growth.
+      </p>
+      <p>We are a strong fit if your business wants to:</p>
+      <ul>
+        <li>Improve team communication and collaboration</li>
+        <li>Resolve conflict quickly and professionally</li>
+        <li>Strengthen leadership and accountability at every level</li>
+        <li>Increase profitability and protect margins</li>
+        <li>Retain customers and key team members</li>
+        <li>Create systems that reduce stress and increase consistency</li>
+        <li>Clarify your direction and align your team around it</li>
+      </ul>
+      <p>
+        If your business is ready for breakthrough, clarity, and structure,
+        the G.R.O.W.T.H. Framework was built for you.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========= ROI & IMPACT ========= -->
+  <section class="section">
+    <div class="card two-column">
+      <div>
+        <h2 class="section-title">ROI & Impact</h2>
+        <p class="section-subtitle">Why investing in consulting pays off</p>
+        <p>Research consistently shows that investing in leadership, culture, and systems creates measurable results:</p>
+        <ul>
+          <li>Companies that invest in leadership development see up to a <strong>29% increase in profit</strong>.</li>
+          <li>Organizations with healthy culture experience <strong>48% higher employee engagement</strong>.</li>
+          <li>Improved systems and processes can reduce operational waste by <strong>20–30%</strong>.</li>
+          <li>Addressing conflict directly can cut turnover by as much as <strong>50%</strong>.</li>
+          <li>Coaching and consulting together often create an average <strong>5x–7x return on investment</strong>.</li>
+        </ul>
+        <p>
+          At GE Coaching and Consulting, we don’t just aim for inspiration — we aim for transformation that shows up in
+          <strong>culture, performance, and the bottom line</strong>.
+        </p>
+      </div>
+      <div class="img-block">
+        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1200&q=80"
+             alt="Business analytics and growth chart">
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= G.R.O.W.T.H. FRAMEWORK VISUAL ========= -->
+  <section class="section" id="framework">
+    <div class="card">
+      <h2 class="section-title">The G.R.O.W.T.H. Business Transformation Framework™</h2>
+      <p class="section-subtitle">
+        A clear, six-part process to move from reaction and chaos to clarity, health, and sustainable growth.
+      </p>
+
+      <div class="framework-grid">
+        <div class="framework-item">
+          <div class="framework-pill">G</div>
+          <div class="framework-title">Gain Clarity</div>
+          <div class="framework-desc">
+            Full diagnostic of leadership, culture, systems, and financial health to identify what’s really going on beneath the surface.
+          </div>
+          <div class="framework-tag">Clarity</div>
+        </div>
+
+        <div class="framework-item">
+          <div class="framework-pill">R</div>
+          <div class="framework-title">Repair Relationships & Culture</div>
+          <div class="framework-desc">
+            Address unresolved tension, misalignment, and communication gaps so your team can trust, collaborate, and move in the same direction.
+          </div>
+          <div class="framework-tag">Culture</div>
+        </div>
+
+        <div class="framework-item">
+          <div class="framework-pill">O</div>
+          <div class="framework-title">Organize Systems</div>
+          <div class="framework-desc">
+            Strengthen workflow, onboarding, customer experience, sales processes, and operational rhythm for consistent results.
+          </div>
+          <div class="framework-tag">Systems</div>
+        </div>
+
+        <div class="framework-item">
+          <div class="framework-pill">W</div>
+          <div class="framework-title">Work the Plan</div>
+          <div class="framework-desc">
+            Build a clear, simple plan with quarterly goals, monthly milestones, and weekly actions so everyone knows what winning looks like.
+          </div>
+          <div class="framework-tag">Execution</div>
+        </div>
+
+        <div class="framework-item">
+          <div class="framework-pill">T</div>
+          <div class="framework-title">Track & Optimize</div>
+          <div class="framework-desc">
+            Establish metrics and feedback loops so you can see what’s working, adjust quickly, and avoid sliding back into old patterns.
+          </div>
+          <div class="framework-tag">Metrics</div>
+        </div>
+
+        <div class="framework-item">
+          <div class="framework-pill">H</div>
+          <div class="framework-title">High-Level Scaling</div>
+          <div class="framework-desc">
+            Support growth through new revenue opportunities, leadership development, and strategic expansion once the foundation is healthy.
+          </div>
+          <div class="framework-tag">Growth</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= SERVICES & ABOUT ========= -->
+  <section class="section">
+    <div class="card two-column">
+      <div>
+        <h2 class="section-title">Services</h2>
+        <p>
+          GE Coaching and Consulting offers a range of services built around the G.R.O.W.T.H. Framework:
+        </p>
+        <ul>
+          <li><strong>Business Health Diagnostic & Strategy Roadmap</strong> – A full assessment of your business with practical next steps.</li>
+          <li><strong>Leadership & Culture Consulting</strong> – Focused work on communication, alignment, trust, and accountability.</li>
+          <li><strong>Organizational Health & Systems Optimization</strong> – Streamlining processes, workflows, and operational structure.</li>
+          <li><strong>Executive & Leadership Coaching</strong> – One-on-one coaching for owners and key leaders.</li>
+          <li><strong>Team Workshops & Conflict Resolution Training</strong> – Live or virtual sessions for teams navigating change.</li>
+          <li><strong>Quarterly Growth Planning</strong> – Ongoing support to keep your team focused and accountable.</li>
+          <li><strong>Scaling Strategy Support</strong> – Guidance as you expand, hire, or move into new markets.</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="section-title">About George Encinias</h2>
+        <p>
+          George Encinias is the founder of GE Coaching and Consulting and a seasoned leader with over
+          25 years of experience in leadership, communication, and organizational development.
+        </p>
+        <p>
+          He is known for his ability to quickly understand complex dynamics, ask the right questions,
+          and create practical paths forward for both leaders and teams.
+        </p>
+        <p>
+          George brings a unique combination of:
+        </p>
+        <ul>
+          <li>Real-world leadership experience</li>
+          <li>Strong conflict resolution and communication skills</li>
+          <li>Deep understanding of team dynamics and culture</li>
+          <li>A practical, faith-informed perspective on transformation</li>
+        </ul>
+        <p>
+          His mission is to help leaders build healthier organizations that grow sustainably — in people,
+          culture, and profit.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= TESTIMONIALS + CTA ========= -->
+  <section class="section">
+    <div class="card">
+      <h2 class="section-title">Client Feedback & Testimonials</h2>
+      <p class="small">
+        (Insert your client stories and quotes here. Below are placeholder examples you can customize.)
+      </p>
+
+      <div class="quote">
+        “George helped us identify what was holding our business back in the first meeting.
+        The clarity we gained changed the way we lead our people and run our operations.”
+        <br><strong>– Client Name, Company</strong>
+      </div>
+
+      <div class="quote">
+        “Our team communicates better than ever. The culture shift was noticeable within weeks,
+        and our turnover has dropped significantly.”
+        <br><strong>– Client Name, Company</strong>
+      </div>
+
+      <div class="quote">
+        “We saw measurable improvements in profitability and efficiency.
+        The G.R.O.W.T.H. Framework gave us language and structure we can keep using.”
+        <br><strong>– Client Name, Company</strong>
+      </div>
+    </div>
+
+    <div class="cta-card">
+      <h2>Ready to Transform Your Business?</h2>
+      <p>
+        If you’re committed to building a healthier, more effective, and more profitable organization,
+        let’s start a conversation.
+      </p>
+      <p class="cta-email">
+        Email: <a href="mailto:Ignitemecoaching@gmail.com">Ignitemecoaching@gmail.com</a>
+      </p>
+      <a class="btn-primary" href="mailto:Ignitemecoaching@gmail.com">Schedule a Consultation</a>
+      <p class="small" style="margin-top:10px;">
+        Virtual & in-person options available.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    GE Coaching & Consulting • Business Consulting • Leadership Development • Organizational Health
+  </footer>
+
+</body>
+</html>
